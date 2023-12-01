@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roblox Site Alpha - T1RM Status</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Roblox Site Alpha - T1RM Status</h1>
+  
+  <p>Game Status: <span id="currentStatus">Up</span></p>
+  <button onclick="changeGameStatus()">Change Game Status</button>
+
+  <script>
+    function changeGameStatus() {
+      var statusSelect = prompt("Enter the new game status:");
+      if (statusSelect !== null) {
+        document.getElementById("currentStatus").textContent = statusSelect;
+      }
+    }
+  </script>
+</body>
+</html>
